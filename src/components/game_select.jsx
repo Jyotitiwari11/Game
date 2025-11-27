@@ -11,7 +11,8 @@ const game_select = ({selected,setSelected,error}) => {
       
         {arr.map((value,i)=>{
           return(
-            <div key={i} className={`w-[72px] h-[72px] border-2 text-[22px] flex items-center justify-center ${value===selected?"text-white bg-black":"box"}`} onClick={()=>setSelected(value)}>{value}</div>
+            <div key={i} className={`w-[72px] h-[72px] border-2 text-[22px] flex items-center justify-center ${value===selected?"text-white bg-black":"box"}`} onClick={()=>setSelected(value)}>{value}</div>      
+            
           )
         }
 
